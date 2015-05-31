@@ -53,3 +53,6 @@ sudo apt-get install nginx
 
 # 安装memcached
 sudo apt-get install memcached
+
+# 安装mysql2.gem依赖包
+sudo apt-get install libmysqlclient-dev
