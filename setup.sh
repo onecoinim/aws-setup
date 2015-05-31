@@ -46,6 +46,9 @@ rbenv rehash
 ## 修改gem源，提高下载速度
 # gem sources --remove https://rubygems.org/
 # gem sources -a http://ruby.taobao.org/
+
+# 安装bundler
+gem install bundler
 #####rbenv 环境安装结束，gems的安装，使用工程下的bundle install#######
 
 # 安装Nginx服务器
