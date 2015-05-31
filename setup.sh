@@ -3,7 +3,7 @@
 
 # Ubuntu系统下安装ruby必要的库和编译环境
 sudo apt-get update
-sudo apt-get install -y build-essential openssl curl libcurl3-dev libreadline6 libreadline6-dev git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf automake libtool imagemagick libmagickwand-dev libpcre3-dev libsqlite3-dev
+sudo apt-get install -y build-essential openssl curl libcurl3-dev libreadline6 libreadline6-dev git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf automake libtool imagemagick libmagickwand-dev libpcre3-dev libsqlite3-dev libmysqlclient-dev
 
 # rbenv环境安装
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
@@ -56,6 +56,3 @@ sudo apt-get install nginx
 
 # 安装memcached
 sudo apt-get install memcached
-
-# 安装mysql2.gem依赖包
-sudo apt-get install libmysqlclient-dev
