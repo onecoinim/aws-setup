@@ -20,7 +20,19 @@ git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
 ## 环境变量
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
+
+# sh: 34: source: not found
+# ubuntu下的sh，默认是 dash 而不是bash
+# $ls -l `which sh`
+# /bin/sh -> dash
+# 解决办法有2个：
+#   `sudo dpkg-reconfigure dash #Select "no" when you're ask`
+#   或者
+#   . command
+#
+# 参考：http://stackoverflow.com/questions/13702425/source-command-not-found-in-sh-shell
+# source ~/.bashrc
+. ~/.bashrc
 type rbenv
 
 ## ruby环境安装，首先列出可安装的版本，然后选择后进行下载编译
