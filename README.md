@@ -4,7 +4,7 @@ Setup files of a AWS EC2 instance running Ubuntu 14.04.2 LTS
 ```sh
 cd $HOME
 sudo apt-get install -y git-core
-git clone https://github.com/startup-class/setup.git
+git clone https://github.com/onecoinim/aws-setup.git
 ./setup/setup.sh   
 ```
 
